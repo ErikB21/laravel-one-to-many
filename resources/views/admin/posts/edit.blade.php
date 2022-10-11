@@ -18,9 +18,9 @@
                 <div class="form-group mb-3">
                     <label for="category_id">Category</label>
                     <select id="category_id" name="category_id" class="form-control @error('category_id') is-invalid @enderror">
-                        <option value="">Scegli Categoria</option>
+                        <option {{(old('category_id')=="")?'selected':''}} value="">Scegli Categoria</option>
                         @foreach ($categories as $category)
-                            <option value="{{$category->id}}">{{old('category_id', $category->name)}}</option>
+                            <option {{(old('category_id', $post->category_id)==$category->id)?'selected':''}} value="{{$category->id}}">{{$category->name}}</option>
                         @endforeach
                     </select>
                     @error('category_id')

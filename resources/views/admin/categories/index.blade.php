@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Post')
+@section('title', 'Category')
 
 @section('css')
     <link rel="stylesheet" href="{{ asset('css/index.css')}}">
