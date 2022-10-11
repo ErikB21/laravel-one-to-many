@@ -14,6 +14,21 @@
 
                 @csrf
 
+                <div class="form-group mb-3">
+                    <label for="category_id">Category</label>
+                    <select id="category_id" name="category_id" class="form-control @error('category_id') is-invalid @enderror">
+                        <option value="category_id">Scegli Categoria</option>
+                        @foreach ($categories as $category)
+                            <option value="{{$category->id}}">{{$category->name}}</option>
+                        @endforeach
+                    </select>
+                    @error('category_id')
+                        <div class="invalid-feedback">{{$message}}</div>
+                    @enderror
+                </div>
+                
+                
+
                 <div class="mb-3">
                     <label for="title" class="form-label">Title</label>
                     <input required type="text" class="form-control @error('title') is-invalid @enderror" id="title" name="title" value="{{old('title')}}">
