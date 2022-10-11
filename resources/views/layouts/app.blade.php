@@ -44,7 +44,7 @@
                             <a href="{{route('admin.posts.index')}}" class="nav-link"><i class="fa-solid fa-signs-post"></i> Gestione Post</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link"><i class="fa-regular fa-paper-plane"></i> Categorie</a>
+                            <a href="{{route('admin.categories.index')}}" class="nav-link"><i class="fa-solid fa-paper-plane"></i> Categorie</a>
                         </li>
                         
                     </ul>
