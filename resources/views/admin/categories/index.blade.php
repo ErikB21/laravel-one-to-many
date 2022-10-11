@@ -25,6 +25,7 @@
 
         <div class="d-flex justify-content-between align-items-center px-2 my_title">
             <h1 class="text-center py-3">Category</h1>
+            <a class="btn btn-dark" href="{{route('admin.categories.create')}}"><i class="fa-solid fa-circle-plus pr-2 text-primary"></i>Nuova Categoria</a>
         </div>
         <table class="table m-auto table-dark pb-5">
             <thead class="">
