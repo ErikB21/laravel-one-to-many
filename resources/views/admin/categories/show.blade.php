@@ -44,7 +44,7 @@
                     @endforelse
                 </tbody>
             </table>
-            <a href="{{route('admin.categories.index')}}" class="btn btn-primary mt-3">Back</a>
+            <a href="{{route('admin.categories.index')}}" class="btn btn-primary my-1">Back</a>
         </div>
     </div>
 
